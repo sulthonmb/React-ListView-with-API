@@ -162,7 +162,7 @@ class Home extends React.Component{
 
                 <div style={{margin:20}}>
                     {this.state.list && this.state.list.filter(article => {
-                        return(article.title.toLowerCase().includes(this.state.keyword) || article.content.toLowerCase().includes(this.state.keyword));
+                        return(article.title.toLowerCase().includes(this.state.keyword.toLowerCase()) || article.content.toLowerCase().includes(this.state.keyword.toLowerCase()));
                     }).map(article => {
                         return(
                             <div style={{marginBottom:20}}>
